@@ -4,6 +4,7 @@ import MessageSender from "./message-sender/MessageSender";
 import s2 from "../../s1-main/App.module.css";
 import FriendMessage from "./friend-message/FriendMessage";
 import avatar from "./avatar.png";
+import friendAvatar from "./friendAvatar.png";
 
 /*
  * 1 - описать тип MessageType
@@ -34,29 +35,32 @@ export const message0: MessageType = {
   id: 0,
   user: {
     avatar: avatar, // можно менять
-    name: "Some Name", // можно менять
+    name: "Brad Peet", // можно менять
   },
   message: {
-    text: "some textsome textsome textsome textsome textsome textsome text", // можно менять
+    text: "This is awesome. I finally start figuring out what is going on!", // можно менять
     time: "22:00", // можно менять
   },
 };
 export const friendMessage0: MessageType = {
   id: 100,
   user: {
-    avatar: avatar, // можно менять
-    name: "Friend Name", // можно менять
+    avatar: friendAvatar, // можно менять
+    name: "Jonny Deep", // можно менять
   },
   message: {
     text: "зеркальное сообщение для тренировки css", // можно менять
-    time: "22:00", // можно менять
+    time: "21:33", // можно менять
   },
 };
 
 const HW1 = () => {
   return (
     <div id={"hw1"}>
-      <div className={s2.hwTitle}>Homework #1</div>
+      <div className={s2.hwTitle}>
+        <h3>Hometask #1</h3>
+        <hr />
+      </div>
       <div className={s2.hw}>
         {/*проверка отображения (не менять)*/}
         <div>
