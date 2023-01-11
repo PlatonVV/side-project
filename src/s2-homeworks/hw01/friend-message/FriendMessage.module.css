@@ -5,6 +5,10 @@
 .friendImageAndText {
 
 }
+.friendImageAndText img {
+width: 200px;
+    border-radius: 100px;
+}
 
 .friendImageAndText img {
 
