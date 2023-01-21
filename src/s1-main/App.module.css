@@ -7,4 +7,19 @@
 }
 
 .hwTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+}
+
+.hr {
+    border: 1px solid #D9D9D9;
+
 }

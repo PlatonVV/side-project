@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { message0 } from "../HW1";
 import s from "./MessageSender.module.css";
+import s2 from "../../../s1-main/App.module.css";
 
 // компонента, которая тестирует вашу компоненту (не изменять, any не трогать)
 const MessageSender = (props: any) => {
@@ -20,6 +21,7 @@ const MessageSender = (props: any) => {
         textareaRef.current.scrollHeight + "px";
     }
   }, [text]);
+  console.log(textareaRef);
 
   const addMessage = () => {
     setMessages([
@@ -52,7 +54,7 @@ const MessageSender = (props: any) => {
           className={s.textarea}
           ref={textareaRef}
           title={"Shift+Enter for send"}
-          placeholder={"Type your message"}
+          placeholder={"Type a message"}
           value={text}
           onChange={onChange}
           onKeyDown={onKeyDown}
@@ -60,7 +62,7 @@ const MessageSender = (props: any) => {
         <button id={"hw1-button"} className={s.button} onClick={addMessage}>
           Send
         </button>
-        <hr />
+        <hr className={s2.hr} />
       </div>
     </>
   );
