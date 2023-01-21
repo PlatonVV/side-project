@@ -11,8 +11,6 @@ const FriendMessage: React.FC<FriendMessageType> = (props) => {
       id={"hw1-friend-message-" + props.message.id}
       className={s.friendMessage}
     >
-      {" "}
-      {props.message.message.text}
       <div className={s.friendImageAndText}>
         <img
           src={props.message.user.avatar}

@@ -11,7 +11,6 @@ export type MessagePropsType = {
 const Message: React.FC<MessagePropsType> = (props) => {
   return (
     <div id={"hw1-message-" + props.message.id} className={s.message}>
-      {props.message.message.text}
       <div className={s.imageAndText}>
         <img
           id={"hw1-avatar-" + props.message.id}
